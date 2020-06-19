@@ -7,21 +7,19 @@ import { FooterComponent } from './footer/footer.component';
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
+const CORE_COMPONENTS = [
+  NavbarComponent,
+  SidebarComponent,
+  FooterComponent,
+  MainDashboardComponent,
+  PageNotFoundComponent
+];
+
 @NgModule({
-  declarations: [
-    NavbarComponent,
-    SidebarComponent,
-    FooterComponent,
-    MainDashboardComponent,
-    PageNotFoundComponent
-  ],
+  declarations: CORE_COMPONENTS,
   imports: [
     CommonModule
   ],
-  exports: [
-    NavbarComponent,
-    SidebarComponent,
-    FooterComponent
-  ]
+  exports: CORE_COMPONENTS
 })
 export class ScmMainModule { }
