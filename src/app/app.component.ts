@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { SidebarMenu } from "./scm-main/sidebar/sidebar.component";
+import { SidebarMenu } from './scm-main/sidebar/sidebar.component';
 
 @Component({
   selector: 'scm-root',
