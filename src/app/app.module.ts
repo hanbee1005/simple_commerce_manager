@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 
 import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 // 직접 생성한 모듈
 import { ProductModule } from './product/product.module';
@@ -29,7 +30,8 @@ import {environment} from '../environments/environment';
         /* App Routing Module */
         AppRoutingModule,
         /* 3rd Modules */
-        AngularFireModule.initializeApp(environment.firebase)
+        AngularFireModule.initializeApp(environment.firebase),
+        AngularFireAuthModule
     ],
   providers: [],
   bootstrap: [AppComponent]
