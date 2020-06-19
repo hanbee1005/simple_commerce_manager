@@ -8,9 +8,6 @@ import { CategoryManagementComponent } from './category-management/category-mana
   declarations: [CategoryManagementComponent],
   imports: [
     CommonModule
-  ],
-  exports: [
-    CategoryManagementComponent
   ]
 })
 export class CategoryModule { }

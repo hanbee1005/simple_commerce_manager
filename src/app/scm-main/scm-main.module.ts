@@ -7,6 +7,8 @@ import { FooterComponent } from './footer/footer.component';
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
+import { RouterModule } from '@angular/router';
+
 const CORE_COMPONENTS = [
   NavbarComponent,
   SidebarComponent,
@@ -18,7 +20,8 @@ const CORE_COMPONENTS = [
 @NgModule({
   declarations: CORE_COMPONENTS,
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: CORE_COMPONENTS
 })
